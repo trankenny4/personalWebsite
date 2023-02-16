@@ -27,7 +27,7 @@ The staff page utilizes two different methods of generating a random staff membe
 
 In my 'random.js' file, event listeners to register for a user click have been implemented. The buttons are the conditionals in the asynchronous getRandomUser function, determining whether to perform a browser request or Express server request. If a browser request is selected, Document Object Model (DOM) manipulation is used to append the innerHTML into the table of employees. If a server request is selected, the 'app.get' asynchronous function in my 'index.mjs' file will target the ID of the requested button, await a response, and fetch the data with the Fetch API.  
 
-Error handling haas also been implemented should a response not be received from the server.
+Error handling has also been implemented should a response not be received from the server.
 
 
 
