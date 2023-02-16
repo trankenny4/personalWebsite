@@ -1,0 +1,27 @@
+{
+  "name": "a6-tranken",
+  "version": "1.0.0",
+  "description": "Assignment 6 Web Dev",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "keywords": [
+    "assignment"
+  ],
+  "author": "Kenny Tran",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "node-fetch": "^3.3.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}
