@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kenny Tran</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header> 
+        <h1>Kenny Tran</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+
+        <main>
+            <section>
+                <h2>Web Development Concepts</h2>
+
+                <nav class="homenav">
+                    <a href="#web-servers">About Web Servers</a>
+                    <a href="#frontend-design">Frontend Design</a>
+                    <a href="#optimizing-images">Optimizing Images</a>
+                    <a href="#cascading-stylesheets">Cascading Stylesheets</a>
+                    <a href="#forms">Forms</a>
+                    <a href="#express">Express</a>
+                    <a href="#javascript">JavaScript</a>
+                    <a href="#dom">DOM</a>
+                </nav>
+
+                <article>
+                    <h3 id="web-servers">About Web Servers</h3>
+                        <p>
+                            This page was created by reading a resource (index.html) from my local machine. "File" is being used as the scheme in opening this webpage. 
+                            Index.html is being selected as the resource name because it is typically the default designated homepage for web servers.
+                            For this website, which is being hosted on OSU's Engineering Apache web server, 'index.html' is also the default name being used. 
+                            Within the index.html file specifically, the code was edited to include a different title name, insert two headers, and insert four paragraphs.
+                        </p>
+                        <p>
+                            In my Google Chrome Web Dev/Inspector tools, I have the network tab open to view the requests and responses of the server.
+                            It can be seen that the "index.html" file has a status code of 200, which indicates the server request was successful.
+                            However, "main.css" and "main.js" have a "(failed)" status. This is expected because none of those files were provided to the server at this time (1/05/2023).
+                        </p>
+                        <p>
+                            After updating and transferring the files again, in the same network tools of the Web Dev/Inspector tools of Google Chrome,
+                            I once again see "index.html" with a status code of 200, indicating the server request was successful. However,
+                            both "main.css" and "main.js" have a 404 status code instead, which indicates the request failed because there
+                            was a client error and that the request's syntax was incorrect. These two files were not found correctly on the client side.
+                        </p>
+                        <p>          
+                            Additionally, there is also a "favicon.ico" request that also has a status code of 200. "favicon.ico" has this status code 
+                            because the OSU College of Engineering favicon server request was successful, which adds the small icon for the web browser tab.
+
+                </article>
+                <article>
+                    <h3 id="frontend-design">Frontend Design</h3>
+                        <p> The idea of frontend design is to provide a visual interface that is easy for any user to understand and navigate. By incorporating an efficient website design, 
+                            users can be effectively guided through the website and complete the tasks they had set out to perform. Failure to do so can result in users seeking competitors 
+                            who provide a better experience. </p>
+                        <p> The five "E"s of usability in frontend design are: </p>
+
+                        <dl>
+                            <dt><strong>Effective</strong></dt>
+                            <dd>Users are able to meet the goals and tasks they set out to perform on the website.</dd>
+
+                            <dt><strong>Efficient</strong></dt>
+                            <dd>Users should be able to perform tasks in the fewest steps possible.</dd>
+
+                            <dt><strong>Easy to navigate</strong></dt>
+                            <dd>Users should be able to effectively navigate the website without assistance or confusion.</dd>
+
+                            <dt><strong>Error-free</strong></dt>
+                            <dd>Users should not run into errors in accessibility or availability when using the website.</dd>
+
+                            <dt><strong>Enjoyable</strong></dt>
+                            <dd>Users should enjoy using the site and plan to use the website in the future. </dd>
+                        </dl>
+
+                        <p>
+                            Page layout tags are what allows a web developer to modify elements found on a website. In this case, HTML is the markup language being used to define attributes of this website 
+                            with tags. From the general structure of the website, including headers, sub-headers, and paragraphs, to lists, tables, emphasis on specific words, et cetera, page layout tags allow the 
+                            developer to modify the website to their desire.
+                        </p>
+                        <p>
+                            Anchors on a webpage are used to link content from one page to another by using the &lt;a&gt;&lt;/a&gt; tags. The href attribute is specified within the &lt;a&gt; tag, which not only 
+                            provides the anchor element being linked, but also text describing the link. Additionally, by utilizing ID attributes to specific elements being linked and preceding the element with 
+                            a hash symbol in the URL, it is possible to link to a specific location within a document, rather than only at the top of the document.  
+                        </p>
+                </article>
+
+                <article>
+                    <h3 id="optimizing-images">Optimizing Images</h3>
+                        <p>
+                            The 6 major specifications of images for the web are: a descriptive file name, a small file size, exact dimensions, correct file format, reduced resolution, and color modes.
+                            A descriptive file name is important so that search engine optimization can work effectively. File names should include the four Ws (who, what, when, where) so that engine bots
+                            can efficiently categorize it for users who are looking for that particular content. Small file sizes are to ensure the fastest load times. Users do not like waiting for content
+                            to load and can be detrimental to lower resolution devices if too high of quality images are used. Exact dimensions are also important, as ensuring cropped and reduced image sizes are appropriate
+                            for the web page is crucial. Additionally, correct file format is critical because file formats, such as .JPG, .PNG, .GIF, etc. all have their intended uses. With various technological advancements
+                            such as smartphones, tablets, smartwatches, monitors, etc., it is also crucial that resolutions of images are reduced as necessary for different devices. Finally, the color mode of the images
+                            is dependent on the file format, whereby RGB is for .PNG, .JPG, .SVG, .WebP, and indexed for .GIF.
+                        </p>
+
+                        <p>
+                            Typically, the .JPG and .WebP file formats would be most appropriate for photos. They can be compressed down to small file sizes and .JPG files also remain rectangular, which is very useful for web pages. However, it
+                            is important to note that higher compression of these file formats reduces the image quality. On the other hand, .PNG files and .SVG files are great for line art. .PNG files have true transparency and can be
+                            placed over different colors without distortion, while .SVG files are mathematically derived with XML for 2D, interactive, or animated photos.
+                        </p>
+                </article>
+
+                <article>
+                    <h3 id="cascading-stylesheets">Cascading Stylesheets</h3>
+                        <p>
+                            The main reason for incorporating cascading stylesheets (CSS) in websites and apps is to allow complete customizability of the website to the designer's preference. With CSS, it becomes possible for
+                            the web developer to structure content, components, coloring, usability, readability, legibility, brand requirements, et cetera. While HTML allows a developer to form basic structure, 
+                            CSS is what allows for the customizability of every visual aspect of the webpage. 
+                        </p>
+
+                        <p>
+                            The 5 ways of incorporating styles are via external CSS rules, embedding the styles within &lt;style&gt;&lt;/style&gt;, using inline styles within an element using an attribute and value, JavaScript template literals
+                            within JavaScript functions, or in regular JavaScript. External CSS rules, particularly with @imports, allows for quick style redefinition within the main/global stylesheet for all pages across the 
+                            website. However, the 4 other methods of incorporating styles are typically meant more for one-time changes through the specific method that requires redefinition. 
+                        </p>
+                </article>
+
+                <article>
+                    <h3 id="forms">Forms</h3>
+                        <p>
+                            The six major goals of forms are to provide accessibility to its user. These goals include providing clear instructions,
+                            letting users know why data is being gathered and which fields are required, setting the first field to autofocus so the user can start typing
+                            immediately, ensuring each form control can be filled in using just the keyboard, adding tab indexing to complex forms, and ensuring validation messages
+                            are screen readable.
+                        </p>
+
+                        <p>
+                            The major tags include form, fieldset, legend, label, input, select, option, textarea, and button.             
+                            The &lt;form&gt; tag has an 'action' attribute that allows for specifying where requests from a form should be sent. 
+                            It also includes a 'method' attribute that specifies the HTTP method that should be used to specify the HTTP method in requests. The &lt;label&gt; tag helps the user understand
+                            the person of their data entry. The for="" attribute is added to match the form control's ID. The &lt;fieldset&gt; and &lt;legend&gt; tag are used to separate form controls
+                            into logical groups, making forms more accessible to all users. The &lt;input&gt; tag is most used to get user data from within the form. It has the type="" attribute that can change
+                            how the input in the form is displayed. The 'name' attribute is what allows the server to know which part of the form each data item is associated with. The &lt;select&gt; and &lt;option&gt; tag
+                            allows us to provide the user a drop-down list of choices. These tags also include the 'name' attribute when sending user choice in the request. The &lt;option&gt; tag is used to further define
+                            the available choices in the drop-down list. The &lt;textarea&gt; tag allows the user to input multiple lines of text and has various &lt;label&gt;s and attributes to change the text field. Lastly,
+                            the &lt;button&gt; tag allows a user to use keyboard activation, mouse clicks, voice commands, or finger touch to activate a specific button in a form. It performs the action="" attribute specified in the &lt;form&gt; tag.
+                        </p>
+
+                        <p>
+                            While there are many form style recommendations to improve usability, some of the major ones include modifying the fieldset{} selector to add margin and padding as appropriate to give adequate spacing between different fieldsets and its inside elements, changing colors
+                            and fonts, displaying labels above rather than inline with their elements, and accommodating users by increasing font size and padding. Additionally, providing focus background colors, adding :required status to important fields that have to be filled, 
+                            warning users that certain fields are required with colors to border changes, changing input form colors when in a mouse's focus, and keeping certain parts of forms enabled or disabled are other form style recommendations to improve usability.
+
+                        </p>
+                </article>
+
+                <article>
+                    <h3 id="express">Express</h3>
+                        <p>
+                            Three technologies that can be used to improve the web development experience include Node, npm, and Express. Node.js is an open source platform that allows for server-side and networking applications development. Node
+                            allows us to do various tasks such as managing modules, error handling, callbacks, add-ons, streaming, et cetera. Npm, a package manager for Node.js, is what allows us to look for libraries or packages pertaining to the
+                            task that needs to be completed. To install and manage these packages, npm commands can be used. The major commands include 'npm init', 'npm install &lt;package&gt;', and 'npm start' to initialize a Node.js application,
+                            install a specified Node.js package, and start a Node.js application. Finally, Express is what allows us to set up a local web server on our hard drives. Express not only allows us to test forms for requests, but also responses
+                            without a public web server. By using GET or POST requests that are routed to a specified endpoint, we can further use JavaScript to get client-side data.
+                        </p>
+                </article>
+
+                <article>
+                    <h3 id="javascript">JavaScript</h3>
+                        <p>
+                            The main data types that exist in JavaScript include numbers, boolean, strings, symbols, special values (undefined and null) and objects.
+                        </p>
+
+                        <p>
+                            In JavaScript, objects are a set of name-value pairs, also known as properties of the object. In JavaScript, objects can be created, read, updated, or deleted, much like other programming languages.
+                            Objects are commonly found in JavaScript Object Notation (JSON) files. JSON is a format used to exchange data across varying programming languages, as it is not language dependent. Programming languages
+                            often provide libraries for JSON so that its contents may be read. In JavaScript, arrays are objects whose property names are numeric strings (ex: '0', '1', '2', etc.). Since JavaScript requires
+                            properties of an object to be a string data type, the property names of arrays are also strings. 
+                        </p>
+
+                        <p>
+                            Conditionals and loops in JavaScript work similarly to other programming languages. If conditionals, switch conditionals, while loops, do while loops, and for loops all exist in JavaScript. 
+                            Despite the differences in syntax, these conditionals and loops also utilize boolean operators for comparisons, exactly like other languages. 
+                            These operators include && (AND), || (OR), and ! (NOT). These operators may only be used on numbers or strings.
+                        </p>
+
+                        <p>
+                            In objected oriented programming (OOP), objects are expected to have an identity, state, and behavior. Specific to JavaScript, objects may be created without declaring classes. 
+                            OOP allows for accessing name-value pairs in objects, and to create, add, read, modify, or delete properties of objects as mentioned previously. Although declaring classes are not required, modern 
+                            JavaScript does allow for classes, which may be useful in grouping relevant objects and their functions together.
+                        </p>
+
+                        <p>
+                            Lastly, functional programming in JavaScript is allows programs to run. In JavaScript, functions are "first-class" values. This allows for a developer to assign functions to variables,
+                            define functions that receive other functions as arguments, and define functions that may return other functions. When a particular function receives another function as an argument, it is referred
+                            to as a higher-order function. Additionally, in JavaScript, it is possible to create anonymous functions, which are functions defined using function expression. 
+                        </p>
+                </article>
+                
+                <article>
+                    <h3 id="dom">DOM</h3>
+                        <p>
+                            The Document Object Model (DOM) is a very efficient way of adding dynamic content into webpages. DOM allows for a tree structure which includes nodes of 
+                            all the following types: document, document type, element, attribute, attribute, and text. Not only is it possible to traverse elements in the DOM tree, but it is also
+                            possible to search for elements, remove elements, and add additional elements if required. This functionality allows a web developer to add dynamic content based on the user's inputs,
+                            such as for styling content on a webpage differently, adding data, removing data, or other customizations the user would like. 
+
+                        </p>
+                </article>
+
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Kenny Tran</p>
+        </footer>
+
+    </body>
+
+</html>
