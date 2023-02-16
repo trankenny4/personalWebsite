@@ -16,7 +16,7 @@ An image gallery to learn how to use images in HTML. Text, captions, and image b
 **Order/Contact**:  
 (NOTE: Unfortunately, for the order form to be submitted properly, the project must be run locally with Node modules installed via "npm i" -> "npm start" -> "localhost:3000" as URL. Github does not allow for node_modules to be uploaded due to its large file sizes.)
 
-These pages are sample forms to learn how to accept user input in a web page. This includes input boxes, radio buttons, quantity sliders, and text boxes for user inputs. In the HTML and CSS, further quality quality of life improvements for the user has been implemented. The improvements include input boxes changing colors when focused, highlighting red for required entries, red asteriks for required entries, and highlighting red for valid entries. For certain entries, particularly the email address, regular expressions are used to parse for errors.  
+These pages are sample forms to learn how to accept user input in a web page. This includes input boxes, radio buttons, quantity sliders, and text boxes for user inputs. In the HTML and CSS, further quality of life improvements for the user has been implemented. The improvements include input boxes changing colors when focused, highlighting red for required entries, red asterisks for required entries, and highlighting red for valid entries. For certain entries, particularly the email address, regular expressions are used to parse for errors.  
 
 This page also uses the Express server to listen for the user's order form request. Their inputs are read and returned to the user in complete sentence responses.  
 
